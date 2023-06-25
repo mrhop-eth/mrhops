@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>mrhop.eth</title>
 		<style>
       			body {
@@ -22,21 +22,24 @@
 				width: 578px;
 				height: 108px;
 				margin-left:15px;
+				margin-bottom:5px;
 			}
 			a { text-decoration: none; color:white; }
 			a:hover {color: #FFA300;}
-			#wrapper{display:inline-block;}
+			#wrapper{display:inline-block;text-align:justify;}
 			#blocky{
 				background-image: url("64ef.png");
 				background-size: 200px;
-				height:200px;
+				height:200px;				
 				width:200px;
 			}
 			#overview {
 				margin-top:-200px;
 				margin-left:220px;
-				width:400px;
+				width:360px;
 				height:200px;
+				  font-family: Verdana;
+				font-size:0.8em;
 			}
 			#mrhop:hover ~ #blocky{background-image: url("64ef.png");}
 			#safe:hover ~ #blocky{background-image: url("6934.png");}
@@ -50,29 +53,37 @@
 			#footer {color:#888;width:650px;}
 			#footer a {color:#999;}
 			#footer a:hover {color:#bbb;}
+			.address { color:#bbb; }
+			.purples:hover {color:#d8a2e8;}
+			.greens:hover {color:#12ff80;}
+			.blues:hover {color:#8dd8e2;}
 		</style>
 	</head>
 	<body>
 		<div id="logo"></div>
-		<p>
-			<div id="wrapper">
-				<div id="safe"><a href="https://etherscan.io/address/0x143D05BD8A2C81dCEA7e949477d2d427AD126934">0x143D05BD8A2C81dCEA7e949477d2d427AD126934 <b>safe.mrhop.eth</b></a> &nbsp; <a href="https://app.safe.global/home?safe=eth:0x143D05BD8A2C81dCEA7e949477d2d427AD126934">[app]</a></div>
-				<div id="mrhop"><a href="https://etherscan.io/address/0x9ba8108dFcD7412EA67b4c427E445C666d6A64ef">0x9ba8108dFcD7412EA67b4c427E445C666d6A64ef &nbsp; <i>mrhop.eth</i></a></div>
-				<div id="card"><a href="https://etherscan.io/address/0x009f6D72c1a96Abf1BAA07e30444ecFC48B02D81">0x009f6D72c1a96Abf1BAA07e30444ecFC48B02D81 &nbsp; <i>card.mrhop.eth</i></a></div>
-				<div id="backup"><a href="https://etherscan.io/address/0x851D5AfDC3293d40d206B0c5FC097C1ed3b25b0D">0x851D5AfDC3293d40d206B0c5FC097C1ed3b25b0D <b>backup.mrhop.eth</b></a> <a href="https://app.safe.global/home?safe=eth:0x851D5AfDC3293d40d206B0c5FC097C1ed3b25b0D">[app]</a></div>
-				<div id="cold"><a href="https://etherscan.io/address/0x5266a80A750933CA0C7d0665e4c8aA76ed1BC743">0x5266a80A750933CA0C7d0665e4c8aA76ed1BC743 &nbsp; <i>cold.mrhop.eth</i></a></div>
-				<div id="nano"><a href="https://etherscan.io/address/0x3203517EC08666AEB6A0800ab608acd905C72A51">0x3203517EC08666AEB6A0800ab608acd905C72A51 &nbsp; <i>nano.mrhop.eth</i></a></div>
-				<div id="family"><a href="https://etherscan.io/address/0x01C1FadB01aE99024548b0bbDd0d1d77C92de3d0">0x01C1FadB01aE99024548b0bbDd0d1d77C92de3d0 &nbsp; <i>family.mrhop.eth</i></a></div>
-				<div id="node"><a href="https://goerli.etherscan.io/address/0x3802467D2c98782577c958FfD617cF356696962c">0x3802467D2c98782577c958FfD617cF356696962c <b>node.mrhop.eth</b></a></div>
-				<div id="minipool"><a href="https://goerli.etherscan.io/address/0x999973a1eb0278f1B8be3B0b729F3CA617345c08">0x999973a1eb0278f1B8be3B0b729F3CA617345c08 &nbsp; <i>minipool</i></a></div><br />
-				mrhop.eth (at) <a href="https://app.skiff.com/mail/">ethereum.email</a> | <a href="https://chat.blockscan.com/index?a=0x9ba8108dFcD7412EA67b4c427E445C666d6A64ef">blockchain chat</a> | <a href="https://app.ens.eth.limo/profile/?name=mrhop.eth">ENS</a><br />
-				<br />
-				<div id="blocky"></div>
-				<div id="overview"><br />safe.mrhop.eth is the primary store of value, with backup.mrhop.eth being a partial owner on the multisig contract (requires 2 of 3 owner agreement). This allows for backup.mrhop.eth (multisig) to change owner keys of the safe.mrhop.eth with a 3 of 5 agreement of owners. No seed phrases ever written down.</div>
-				<br />
-				<a href="https://www.tradingview.com">tradingview</a> | <a href="https://ultrasound.money/">usm</a> | <a href="https://cointool.app/batchMint/xen">cointool</a> | <a href="https://xen.network/">XEN</a> | <a href="https://app.uniswap.org/">uniswap</a> | <a href="https://app.spritz.finance/">spritz</a> | <a href="https://us.ovhcloud.com/manager">ovh</a><br /><br />
-				<div id="footer">&nbsp;this content published via <a href="https://ipfs.tech/">IPNS/IPFS</a>, autodeployed via <a href="https://app.fleek.co/">fleek</a></div>
+		<div id="wrapper">
+			Mainnet
+			<div id="safe">   <a href="https://etherscan.io/address/0x143D05BD8A2C81dCEA7e949477d2d427AD126934" class="address">0x143D05BD8A2C81dCEA7e949477d2d427AD126934</a> <a href="https://app.ens.eth.limo/profile/?name=safe.mrhop.eth" class="blues"><b>safe.mrhop.eth</b></a> &nbsp; <a href="https://app.safe.global/home?safe=eth:0x143D05BD8A2C81dCEA7e949477d2d427AD126934" class="greens">[app]</a></div>
+			<div id="mrhop">  <a href="https://etherscan.io/address/0x9ba8108dFcD7412EA67b4c427E445C666d6A64ef" class="address">0x9ba8108dFcD7412EA67b4c427E445C666d6A64ef</a> &nbsp; <a href="https://app.ens.eth.limo/profile/?name=mrhop.eth" class="blues"><i>mrhop.eth</i></a></div>
+			<div id="card">   <a href="https://etherscan.io/address/0x009f6D72c1a96Abf1BAA07e30444ecFC48B02D81" class="address">0x009f6D72c1a96Abf1BAA07e30444ecFC48B02D81</a> &nbsp; <a href="https://app.ens.eth.limo/profile/?name=card.mrhop.eth" class="blues"><i>card.mrhop.eth</i></a></div>
+			<div id="backup"> <a href="https://etherscan.io/address/0x851D5AfDC3293d40d206B0c5FC097C1ed3b25b0D" class="address">0x851D5AfDC3293d40d206B0c5FC097C1ed3b25b0D</a> <a href="https://app.ens.eth.limo/profile/?name=safe.mrhop.eth" class="blues"><b>backup.mrhop.eth</b></a> <a href="https://app.safe.global/home?safe=eth:0x851D5AfDC3293d40d206B0c5FC097C1ed3b25b0D" class="greens">[app]</a></div>
+			<div id="cold">   <a href="https://etherscan.io/address/0x5266a80A750933CA0C7d0665e4c8aA76ed1BC743" class="address">0x5266a80A750933CA0C7d0665e4c8aA76ed1BC743</a> &nbsp; <a href="https://app.ens.eth.limo/profile/?name=cold.mrhop.eth" class="blues"><i>cold.mrhop.eth</i></a></div>
+			<div id="nano">   <a href="https://etherscan.io/address/0x3203517EC08666AEB6A0800ab608acd905C72A51" class="address">0x3203517EC08666AEB6A0800ab608acd905C72A51</a> &nbsp; <a href="https://app.ens.eth.limo/profile/?name=nano.mrhop.eth" class="blues"><i>nano.mrhop.eth</i></a></div>
+			<div id="family"> <a href="https://etherscan.io/address/0x01C1FadB01aE99024548b0bbDd0d1d77C92de3d0" class="address">0x01C1FadB01aE99024548b0bbDd0d1d77C92de3d0</a> &nbsp; <a href="https://app.ens.eth.limo/profile/?name=family.mrhop.eth" class="blues"><i>family.mrhop.eth</i></a></div><br />
+			Goerli Testnet
+			<div id="node">    <a href="https://goerli.etherscan.io/address/0x3802467D2c98782577c958FfD617cF356696962c" class="address">0x3802467D2c98782577c958FfD617cF356696962c</a> <a href="https://app.ens.eth.limo/profile/?name=node.mrhop.eth" class="purples"><b>node.mrhop.eth</b></a></div>
+			<div id="minipool"><a href="https://goerli.etherscan.io/address/0x999973a1eb0278f1B8be3B0b729F3CA617345c08" class="address">0x999973a1eb0278f1B8be3B0b729F3CA617345c08</a> &nbsp; <i>minipool</i></a></div><br>
+			mrhop.eth (at) <a href="https://app.skiff.com/mail/">ethereum.email</a> | <a href="https://chat.blockscan.com/index?a=0x9ba8108dFcD7412EA67b4c427E445C666d6A64ef">blockchain chat</a> | <a href="https://app.ens.eth.limo/profile/?name=mrhop.eth" class="blues">ENS</a><br>
+			<br>
+			<div id="blocky"></div>
+			<div id="overview">
+				The main store of value is the multisig contract <b class="greens">safe.mrhop.eth</b> which operates on a 2 of 3 signature requirement.<br /><br />
+				One of the co-owners of the <b class="greens">safe.mrhop.eth</b> contract is <b class="greens">backup.mrhop.eth</b>, which is another multisig contract which operates on a 3 of 5 requirement. This backup contract can be used to change out signatures on the primary contract if manufacturer security risks, device issues, or new devices arise.<br /><br />
+				Owners of <b class="greens">backup.mrhop.eth</b> are from different manufactures and stored in multiple physical locations.
 			</div>
-		</p>
+			<br />
+			<a href="https://www.tradingview.com/">tradingview</a> | <a href="https://ultrasound.money/">usm</a> | <a href="https://cointool.app/batchMint/xen">cointool</a> | <a href="https://xen.network/">XEN</a> | <a href="https://app.uniswap.org/">uniswap</a> | <a href="https://app.spritz.finance/">spritz</a> | <a href="https://us.ovhcloud.com/manager">ovh</a><br><br>
+			<div id="footer">&nbsp;this content published via <a href="https://ipfs.tech/">IPNS/IPFS</a>, autodeployed via <a href="https://app.fleek.co/">fleek</a></div>
+		</div>
 	</body>
 </html>
